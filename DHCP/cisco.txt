@@ -1,5 +1,4 @@
 1. Router
-ip address dhcp
 ip dhcp excluded-address 10.10.10.1 10.10.10.10
 ip dhcp pool R1SW6
 default-router 10.10.10.1
