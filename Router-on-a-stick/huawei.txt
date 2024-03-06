@@ -1,4 +1,5 @@
 1. Switch
+system-view
 vlan batch 100 200
 interface GigabitEthernet 0/0/2
 port link-type trunk
@@ -14,6 +15,7 @@ port default vlan 200
 quit
 
 2. Router
+system-view
 interface GigabitEthernet 0/0/2.100
 ip address 10.10.100.1 255.255.255.0
 dot1q termination vid 100
