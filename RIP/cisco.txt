@@ -8,5 +8,5 @@ no auto summary
 default-information originate
 passive-interface gi0/0
 end
-show ip route rib
+show ip route rip
 write
