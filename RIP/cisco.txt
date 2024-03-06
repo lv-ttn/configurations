@@ -4,3 +4,5 @@ network 10.0.0.0 - округляем до классовой
 version 2
 
 show ip route rib
+show rib database
+
