@@ -1,0 +1,19 @@
+1. Switch 
+system-view
+dns resolve
+dns server 100.8.1.100
+quit
+
+2. Router
+system-view
+dns resolve
+dns server 100.8.1.100
+quit
+
+3. Server(GUI)
+pc1.fam.ru - 10.10.10.100
+pc2.fam.ru - 10.10.10.200
+srv.fam.ru - 10.10.10.300
+sw.fam.ru - 10.10.10.400
+add
+start
