@@ -1,1 +1,5 @@
+1. Router
+router rip
+network 10.0.0.0 - округляем до классовой
 
+show ip route rib
