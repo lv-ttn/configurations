@@ -1,8 +1,11 @@
 1. Router
+configure terminal
 router rip
-network 10.0.0.0 - округляем до классовой
+network 10.0.0.0 
+#округляем до классовой
 version 2
-
+no auto summary
+end
 show ip route rib
 show rib database
-
+write
