@@ -1,6 +1,7 @@
 1. Cоздание, удаление
 vlan 100
 name NAME
+state suspend
 ip 10.10.10.2
 exit
 vlan 200-210,235
