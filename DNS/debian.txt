@@ -1,0 +1,2 @@
+nano /etc/resolv.conf
+nameserver 10.10.10.1
