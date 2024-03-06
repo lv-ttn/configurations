@@ -1,3 +1,4 @@
+На отдельном сервере
 1. Switch 
 system-view
 dns resolve
