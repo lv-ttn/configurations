@@ -8,5 +8,4 @@ no auto summary
 default-information originate
 end
 show ip route rib
-show rib database
 write
