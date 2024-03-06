@@ -1,0 +1,26 @@
+1. Switch
+vlan batch 100 200
+interface GigabitEthernet 0/0/2
+port link-type trunk
+port trunk allow-pass vlan 100 200
+quit
+interface GigabitEthernet 0/0/0
+port link-type access
+port default vlan 100
+quit
+interface GigabitEthernet 0/0/1
+port link-type access
+port default vlan 200
+quit
+
+2. Router
+interface GigabitEthernet 0/0/2.100
+ip address 10.10.100.1 255.255.255.0
+dot1q termination vid 100
+arp broadcast enable
+quit
+interface GigabitEthernet 0/0/2.200
+ip address 10.10.200.1 255.255.255.0
+dot1q termination vid 20
+arp broadcast enable
+quit
