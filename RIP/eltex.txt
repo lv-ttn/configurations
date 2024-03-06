@@ -1,0 +1,12 @@
+1. Router
+configure
+router rip
+network 10.10.10.0/24
+nwtwork 15.15.15.0/24
+enable
+exit
+end
+show configuration changes
+commit
+confirm
+show ip route rib
