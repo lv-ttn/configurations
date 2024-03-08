@@ -1,9 +1,9 @@
-1. Router
+1. Router(NTP server)
 ntp master 3
 #stratum
 show ntp status 
 
-2. Switch
+2. Switch(NTP client)
 ntp server 10.10.10.1 prefer
 show ntp status
 show ntp associations
