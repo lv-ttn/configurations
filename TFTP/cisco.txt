@@ -1,1 +1,13 @@
+1. Switch(telnet - Router)
+telnet 10.10.10.1
+show file system
+dir flash 0:
+conf t
+tftp-server flash0:/home.html
+exit
+exit
+sh file system
+copy tftp:/home.html flash:
+dir flash:
+end
 
