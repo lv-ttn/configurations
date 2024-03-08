@@ -3,10 +3,14 @@ configure terminal
 router rip
 network 10.0.0.0 
 #округляем до классовой
+network 100.0.0.0 
+#задаем сеть, через которую передаем и ту, которую она знает
 version 2
 no auto summary
 default-information originate
-passive-interface gi0/0
+#передаем gateway of last resort
+passive-interface gi0/0.100
+#выключаем саб-интерфейсы
 end
 show ip route rip
 write
