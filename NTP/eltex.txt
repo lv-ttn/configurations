@@ -1,0 +1,4 @@
+1. Router(NTP-client)
+ntp enable
+version 4
+ntp server 110.1.2.1 prefer
