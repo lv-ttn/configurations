@@ -1,0 +1,36 @@
+1. Router
+interface gigabitethernet 1/0/3.100
+ip address 10.10.100.1/24
+exit
+interface gigabitethernet 1/0/3.200
+ip address 10.10.200.1/24
+exit
+#нативный влан
+interface gigabitethernet 1/0/3
+ip address 10.10.10.1/24
+end
+commit 
+confirm
+2. Switch
+interface gigabitethernet
+mode switchport
+switchport mode trunk
+switchport trunk allowed vlan add 100,200
+exit
+vlan 100
+name Admin
+exit
+vlan 200 
+name Stud
+exit
+vlan 10 
+name Native
+exit
+interface gigabitethernet 
+mode switchport
+switchport mode trunk
+switchport trunk allowed vlan remove 10
+switchport trunk allowed vlan add 100,200
+switchport trunk native-vlan 10
+commit
+confirm
