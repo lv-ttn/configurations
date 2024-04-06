@@ -5,7 +5,7 @@ vlan 200
 ip 10.10.200.2
 int gi0/2
 switchport mode trunk
-switchport trunk allowed vlan 100, 200
+switchport trunk allowed vlan 100,200
 exit
 int gi0/0
 switchport mode access
