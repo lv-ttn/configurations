@@ -1,0 +1,14 @@
+ospf 1 router-id 0.0.0.4
+  default-route-advertise (маршрут по умолчанию)
+  area 0
+    network 10.10.10.0 0.0.0.255
+    quit
+  bandwidth-reference 1000 
+  area 0.0.0.4
+  network 12.12.12.0 0.0.0.255
+  quit
+display ip routing-table protocol ospf
+display ospf lsdb
+display ospf peer brief
+ospf 1
+  preference ase 50 (повысить приоритет маршрута по умолчанию со 150)
