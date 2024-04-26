@@ -14,6 +14,7 @@ interface gigabitethernet 1/0/5
   ip ospf instance 1
   ip ospf
   ip ospf area 0.0.0.0 
+  ip ospf cost ...
   exit
 exit
 commit
