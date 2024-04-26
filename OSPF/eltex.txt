@@ -1,0 +1,20 @@
+router ospf 1
+  router-ip 0.0.0.1
+  area 0.0.0.0
+    network 10.10.10.0/24
+    enable
+    exit
+  area 0.0.0.9
+    network 9.9.9.0/24
+    enable
+    exit
+  enable
+  exit
+interface gigabitethernet 1/0/5
+  ip ospf instance 1
+  ip ospf
+  ip ospf area 0.0.0.0 
+  exit
+exit
+commit
+confirm
