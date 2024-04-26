@@ -12,3 +12,8 @@ display ospf lsdb
 display ospf peer brief
 ospf 1
   preference ase 50 (повысить приоритет маршрута по умолчанию со 150)
+Суммаризация
+ospf 1
+  area 0
+    abr-summary 12.12.0.0 255.255.240.0
+  commit
