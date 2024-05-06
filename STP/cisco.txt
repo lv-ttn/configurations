@@ -1,0 +1,3 @@
+spanning-tree vlan 100 priority 100
+spanning-tree vlan 100 root primary
+spanning-tree mode rapid-pvst
