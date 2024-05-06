@@ -1,0 +1,9 @@
+Виртуальное окружение изолирует пакеты от других проектов
+Создать ВО
+python3.11 -m venv ~/venv/netw
+Содержимое ВО
+ls -ls ~/venv/netw
+Перейти в ВО
+source ~/venv/netw/bin/activate
+Выйти из ВО
+deactivate
