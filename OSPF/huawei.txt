@@ -1,3 +1,4 @@
+1. OSPFv2
 ospf 1 router-id 0.0.0.4
   default-route-advertise (маршрут по умолчанию)
   area 0
@@ -17,3 +18,21 @@ ospf 1
   area 0
     abr-summary 12.12.0.0 255.255.240.0
   commit
+2. OSPFv3
+ospfv3
+router-id 10.4.4.4
+quit
+interface vlanif 40
+ospfv3 1 area 2
+quit
+router-id 0.0.0.4
+area 0
+quit
+area 10 
+quit
+int ether1/0/1
+ospfv3 1 area 10
+quit
+
+display ospfv3 peer
+display ipv6 routing-table protocol ospfv3
