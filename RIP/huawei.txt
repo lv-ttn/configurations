@@ -1,0 +1,19 @@
+1. IPv4
+rip 1
+version 2
+network 30.0.0.0 
+default-route originate
+ip route-static 0.0.0.0 0.0.0.0 20.1.2.2
+quit
+2. IPv6
+ipv6
+interface GigabitEthernet1/0/0 
+ipv6 enable
+ipv6 address 1::1 64 
+ripng 1 enable 
+interface GigabitEthernet2/0/0 
+ipv6 enable
+ipv6 address 2::2 64 
+ripng 1 enable
+ripng 1 
+return 
