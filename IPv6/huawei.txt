@@ -1,0 +1,5 @@
+ipv6
+interface vlanif 10
+ipv6 enable
+ipv6 address fc00:0:0:2000::1/64
+quit
