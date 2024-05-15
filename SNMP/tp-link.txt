@@ -1,0 +1,3 @@
+snmp-server community public read-only 
+snmp-server community private read-write
+snmp-server host 192.168.0.119 162 private
