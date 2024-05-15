@@ -1,0 +1,5 @@
+username admin privilege admin secret 0 password
+ip ssh server
+ip ssh algorithm AES128-CBC
+ip ssh algorithm HMAC-SHA1
+service password encryption
