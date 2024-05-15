@@ -1,0 +1,4 @@
+snmp-server community public ro
+snmp-server community private rw
+snmp-server host 192.168.122.147 version 2c private
+#host = pc
