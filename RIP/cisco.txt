@@ -1,4 +1,4 @@
-1. Router
+1. IPv4
 configure terminal
 router rip
 network 10.0.0.0 
@@ -14,3 +14,16 @@ passive-interface gi0/0.100
 end
 show ip route rip
 write
+
+2. IPv6
+#в режиме конфигурации
+ipv6 router rip 1
+ex
+#на интерфейсе
+int gi0/0
+no sh
+ipv6 en
+ipv6 address 2002:beef:cafe:12::1/64
+ipv6 rip 1 default-information originate
+ipv6 rip 1 enable
+exit
