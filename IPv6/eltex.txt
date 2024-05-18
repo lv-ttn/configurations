@@ -1,0 +1,8 @@
+#включается только на интерфейсе
+int gi1/0/2
+ipv6 enable
+ip firewall disable
+ipv6 address 2003:beef:cafe:12::12/64
+end
+commit
+confirm
