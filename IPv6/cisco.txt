@@ -1,0 +1,28 @@
+1. switch
+en
+conf t
+sdm prefer dual-ipv4-and-ipv6 default
+end
+reload
+#в режиме конфигурации
+en
+conf t
+ipv6 unicast-routing
+#на интерфейсе
+int vlan 1
+ipv6 enable
+ipv6 address 2001:beef:cafe:12::10/64
+exit
+#статический маршрут
+ipv6 route ::/0 2001:beef:cafe:12::1
+  
+2. router
+#в режиме конфигурации
+ipv6 unicast-routing
+#на интерфейсе
+int gi0/1
+ipv6 enable
+ipv6 rip 1 enable
+no sh
+ipv6 address 2001:beef:cafe:12::1/64
+exit
