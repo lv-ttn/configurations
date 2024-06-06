@@ -1,8 +1,0 @@
-1. Router
-ip dhcp excluded-address 10.10.10.1 10.10.10.10
-ip dhcp pool R1SW6
-default-router 10.10.10.1
-network 10.10.10.0 /24
-dns-server 20.20.20.20
-do wr
-
