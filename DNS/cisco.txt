@@ -1,8 +1,0 @@
-Сервер на роутере
-1. Router
-configure terminal 
-ip dns server
-ip domain-lookup
-ip host deb1.fam.ru 10.10.10.100
-ip host win1.fam.ru 10.10.10.200
-end
